@@ -36,7 +36,7 @@ include_directories(include  ${PROJECT_SOURCE_DIR}/src/foundation/3rdparty/fmt/i
 							 ${PROJECT_SOURCE_DIR}/src	)
 
 set (SOURCE_EXE  test/test_common.cpp test/random_test.cpp  )
-
+SET(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -flto")
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED on)
 set(CMAKE_CXX_FLAGS_DEBUG " ${CMAKE_CXX_FLAGS_DEBUG} -DDEBUG")
