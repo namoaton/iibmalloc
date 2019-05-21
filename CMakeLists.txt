@@ -9,6 +9,7 @@ set(TEST_BIN_NAME test_iibmalloc.bin)
 set(TEST_D_BIN_NAME test_iibmalloc_d.bin)
 
 add_subdirectory(${PROJECT_SOURCE_DIR}/src/foundation build)
+
 if(MSVC OR MSYS OR MINGW)
 	option(CMAKE_USE_WIN32_THREADS_INIT "using WIN32 threads" ON)
 	set(SOURCE_LIB src/page_allocator_windows.cpp src/iibmalloc_windows.cpp )
