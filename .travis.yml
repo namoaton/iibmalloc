@@ -1,10 +1,10 @@
 language: cpp
 matrix:
-   include:
-   - os: linux
-     dist: xenial
-     sudo: false
-     addons:
+  include:
+    - os: linux
+      dist: xenial
+      sudo: false
+      addons:
         apt:
           sources:
           - ubuntu-toolchain-r-test
@@ -15,10 +15,10 @@ matrix:
       before_install:
         - eval "${MATRIX_EVAL}"
 
-   - os: linux
-     dist: xenial
-     sudo: false
-     addons:
+    - os: linux
+      dist: xenial
+      sudo: false
+      addons:
         apt:
           sources:
           - ubuntu-toolchain-r-test
